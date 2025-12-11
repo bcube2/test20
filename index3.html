@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stránka s vloženým iframe</title>
+    <style>
+        /* Styl pro zobrazení iframe */
+        #vlozeny-obsah {
+            width: 80%;       /* Šířka iframe */
+            height: 500px;    /* Výška iframe */
+            border: 2px solid #333; /* Rámeček pro zvýraznění */
+            display: block;   /* Aby se choval jako blokový prvek */
+            margin: 20px auto; /* Centrování a mezery */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hlavní stránka</h1>
+        <p>Obsah pod tímto textem je vložen ze souboru <code>acjs.html</code> pomocí elementu iframe.</p>
+    </header>
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+
+    <iframe 
+        id="vlozeny-obsah" 
+        src="acjs3.html" 
+        title="Vložený obsah z acjs.html">
+        <p>Váš prohlížeč nepodporuje iframe.</p>
+    </iframe>
+
+    <footer>
+        <p>Konec hlavní stránky.</p>
+    </footer>
+
+</body>
+</html>
